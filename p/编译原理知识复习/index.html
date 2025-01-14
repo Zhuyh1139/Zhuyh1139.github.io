@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="[TOC]\n&mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" &mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n">
 <title>编译原理知识复习</title>
 
-<link rel='canonical' href='http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
+<link rel='canonical' href='https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
 
 <link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="编译原理知识复习">
-<meta property='og:description' content="[TOC]\n&mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n">
-<meta property='og:url' content='http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
+<meta property='og:description' content=" &mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n">
+<meta property='og:url' content='https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
 <meta property='og:site_name' content='陌辞咖啡馆'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='article:modified_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='og:image' content='http://localhost:1313/post/001.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='article:modified_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='og:image' content='https://Zhuyh1139.github.io/post/001.png' />
 <meta name="twitter:title" content="编译原理知识复习">
-<meta name="twitter:description" content="[TOC]\n&mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/post/001.png' />
+<meta name="twitter:description" content=" &mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Zhuyh1139.github.io/post/001.png' />
     </head>
     <body class="
     article-page
@@ -409,8 +409,7 @@
     <section class="article-content">
     
     
-    <p>[TOC]</p>
-<blockquote>
+    <blockquote>
 <p>&mdash;&mdash;by zyh 2025.1.6</p>
 </blockquote>
 <hr>
@@ -1693,7 +1692,7 @@ $$<p>
 <p>静态单赋值形式：和三地址代码差不多，但所有赋值指令都是对不同名字的变量的赋值，同一个变量在不同控制流路径上都被定值。</p>
 <p>基本块：首指令：指令序列的第一条三地址指令；任意转移指令的目标指令；紧跟一个转移指令的指令。由首指令(leader)可以划分出基本块(basicblock)。</p>
 <p>流图的节点是一些基本块，从基本块B到基本块C之间有一条边，当且仅当C的第一个指令可能紧跟在B的最后一条指令之后执行，称B是C的前驱(predecessor)，C是B的后继(successor)。</p>
-<p>流图中的一个结点集合L是一个循环，需满足：该集合有唯一的入口结点；热议结点都有一个到达入口结点的非空路径，且该路径全部在L中。</p>
+<p>流图中的一个结点集合L是一个循环，需满足：该集合有唯一的入口结点；集合结点都有一个到达入口结点的非空路径，且该路径全部在L中。</p>
 <h2 id="32-语法制导翻译">3.2 语法制导翻译
 </h2><p>编译程序的目标：将源程序翻译成为语义等价的目标程序，源程序与目标程序具有不同的语法结构，表达的结果却是相同的。</p>
 <p>语法制导翻译：使用上下文无关文法(CFG)来引导对语言的翻译，是一种面向文法的翻译技术。通过给语法树上各个符号赋予一定的含义，并且将各个符号进行有结构的连接，可以形成语言的具体语句的含义。这给予我们以启示：可以通过扩充文法， 在文法符号上附着某些语义信息，并在这些语义信息间建立相互计算关系，从而在语法分析的同时进行语义分析。 由于这种分析是在语法分析的控制下进行的，故称为语法制导翻译。</p>
@@ -1835,11 +1834,11 @@ solution:</p>
       </tr>
       <tr>
           <td>T-&gt;F</td>
-          <td>T.nptr = F.npt</td>
+          <td>T.nptr = F.nptr</td>
       </tr>
       <tr>
           <td>F-&gt;(E)</td>
-          <td>F.nptr = E.npt</td>
+          <td>F.nptr = E.nptr</td>
       </tr>
       <tr>
           <td>F-&gt;id</td>
@@ -3605,7 +3604,7 @@ eg:</p>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.05855e03984e0c21563e042e67eb3d1dbf10a0e7f128d98ef596b3fcb29bf3fa.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -3680,7 +3679,7 @@ eg:</p>
     });
   }
 </script>
-<script src=http://localhost:1313/background/sakura.js></script>
+<script src=https://Zhuyh1139.github.io/background/sakura.js></script>
 
 
     </body>
