@@ -13,7 +13,7 @@
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='article:modified_time' content='2024-12-29T17:13:45&#43;08:00'/><meta property='og:image' content='https://Zhuyh1139.github.io/post/001.png' />
 <meta name="twitter:title" content="编译原理知识复习">
 <meta name="twitter:description" content=" &mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://Zhuyh1139.github.io/post/001.png' />
+    <meta name="twitter:image" content='https://Zhuyh1139.github.io/post/001.png' /><link rel="alternate" type="application/json" href="https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/index.json">
     </head>
     <body class="
     article-page
@@ -57,7 +57,7 @@
                     
                     
                         
-                        <img src="/img/111_hu9334477991467138819.png" width="300"
+                        <img src="/img/222_hu15625150182145111778.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -353,6 +353,14 @@
     
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" >
+                编译原理
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
@@ -3484,23 +3492,37 @@ eg:</p>
      
     
         
-    <link href='https://unpkg.com/@waline/client@v3/dist/waline.css' rel='stylesheet'/>
-<div id="waline" class="waline-container"></div>
-<style>
-    .waline-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
-        --waline-font-size: var(--article-font-size);
-    }
-    .waline-container .wl-count {
-        color: var(--card-text-color-main);
-    }
-</style><script>
-    
-    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji","https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo"],"lang":"zh-CN","locale":{"admin":"站长","placeholder":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://wilinetest-qw2k7t4q4-zhuyh1139s-projects.vercel.app/"});
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: "Ov23ctbYrhN2Sa5d0d0G",
+        clientSecret: "c58d4d148df66c4c82efadf6054b94b154ac6511",
+        repo: "Zhuyh1139.github.io",
+        owner: "Zhuyh1139",
+        admin: ["Zhuyh1139"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+        proxy: null ,
+    });
+    (function () {
+        if (
+            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
+        ) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
+        }
+        gitalk.render("gitalk-container");
+    })();
 </script>
+
+
 
     
 
