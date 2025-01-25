@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>建站经历 on 陌辞咖啡馆</title>
-        <link>https://Zhuyh1139.github.io/categories/%E5%BB%BA%E7%AB%99%E7%BB%8F%E5%8E%86/</link>
+        <link>http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E7%BB%8F%E5%8E%86/</link>
         <description>Recent content in 建站经历 on 陌辞咖啡馆</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Sat, 25 Jan 2025 14:00:52 +0800</lastBuildDate><atom:link href="https://Zhuyh1139.github.io/categories/%E5%BB%BA%E7%AB%99%E7%BB%8F%E5%8E%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 25 Jan 2025 14:00:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E5%BB%BA%E7%AB%99%E7%BB%8F%E5%8E%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>建站经验[二]stack主题基本美化操作</title>
-        <link>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Sat, 25 Jan 2025 14:00:52 +0800</pubDate>
         
-        <guid>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
-        <description>&lt;img src="https://Zhuyh1139.github.io/post/003.png" alt="Featured image of post 建站经验[二]stack主题基本美化操作" /&gt;&lt;blockquote&gt;
+        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
+        <description>&lt;img src="http://localhost:1313/post/003.png" alt="Featured image of post 建站经验[二]stack主题基本美化操作" /&gt;&lt;blockquote&gt;
 &lt;p&gt;这篇带领大家通过修改配置文件来做基本的美化操作。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;左侧状态栏&#34;&gt;左侧状态栏
@@ -116,7 +116,7 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.iconfont.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;iconfont-阿里巴巴矢量图标库&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是可以查看下载下来的svg文件源码，如果有color或者fill之类的属性，需要把值修改位currentColor，像下面这样，不然会出现深色模式没有切换的情况：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-001.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-001.png&#34;
 	
 	
 	
@@ -201,7 +201,7 @@
 &lt;p&gt;这样我们左侧的状态栏就差不多搞定了！&lt;/p&gt;
 &lt;h2 id=&#34;背景图片&#34;&gt;背景图片
 &lt;/h2&gt;&lt;p&gt;如果要插入静态背景图片，需要先准备一张背景图（废话）放在根目录的assets/background下，如果不存在就自行创建文件夹，我随便选了一张：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-002.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-002.png&#34;
 	
 	
 	
@@ -231,7 +231,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后就像这样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-003.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-003.png&#34;
 	
 	
 	
@@ -419,7 +419,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后就有了如下的效果（这里我用的是鼎列珠海字体）：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-004.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-004.png&#34;
 	
 	
 	
@@ -991,18 +991,18 @@
         </item>
         <item>
         <title>建站经验[一]利用github加hugo搭建属于自己的博客</title>
-        <link>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Fri, 24 Jan 2025 20:16:00 +0800</pubDate>
         
-        <guid>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="https://Zhuyh1139.github.io/post/002.png" alt="Featured image of post 建站经验[一]利用github加hugo搭建属于自己的博客" /&gt;&lt;blockquote&gt;
+        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="http://localhost:1313/post/002.png" alt="Featured image of post 建站经验[一]利用github加hugo搭建属于自己的博客" /&gt;&lt;blockquote&gt;
 &lt;p&gt;写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;github相关&#34;&gt;Github相关
 &lt;/h2&gt;&lt;p&gt;由于github可以免费托管网页并申请域名，因此，我们选择github存储博客源代码（也是大部分选择的），这里我认为你已经有了github账号，不然也很难看到这篇博客，如果实在没有，点击左侧栏目里的那个像猫一样的图标，花几分钟注册一个吧。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;创建新仓库用来存储博客源码，仓库名为&lt;code&gt;{github用户名}.github.io&lt;/code&gt;，这样可以避免许多问题，比如我的github用户名为Zhuyh1139，那么就像下面这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/002-001.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/002-001.png&#34;
 	
 	
 	
@@ -1047,7 +1047,7 @@
 &lt;p&gt;我在下载主题时采用的是git clone一键安装，但后续我发现了问题，就是如果想使用自动部署hugo网页的话（也就是用github托管整个项目，自动hugo更新上面github.io仓库），会因为theme文件夹下git的是stack创作者的远程仓库，导致无法正常git push更新，因此这里我推荐直接下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;下好的直接解压到theme文件夹下即可，然后把里面的hugo.yaml文件移到根目录下，像这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/002-002.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/002-002.png&#34;
 	
 	
 	

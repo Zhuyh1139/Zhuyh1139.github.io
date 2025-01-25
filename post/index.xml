@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 陌辞咖啡馆</title>
-        <link>https://Zhuyh1139.github.io/post/</link>
+        <link>http://localhost:1313/post/</link>
         <description>Recent content in Posts on 陌辞咖啡馆</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Sat, 25 Jan 2025 14:00:52 +0800</lastBuildDate><atom:link href="https://Zhuyh1139.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 25 Jan 2025 14:00:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>建站经验[二]stack主题基本美化操作</title>
-        <link>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Sat, 25 Jan 2025 14:00:52 +0800</pubDate>
         
-        <guid>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
-        <description>&lt;img src="https://Zhuyh1139.github.io/post/003.png" alt="Featured image of post 建站经验[二]stack主题基本美化操作" /&gt;&lt;blockquote&gt;
+        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
+        <description>&lt;img src="http://localhost:1313/post/003.png" alt="Featured image of post 建站经验[二]stack主题基本美化操作" /&gt;&lt;blockquote&gt;
 &lt;p&gt;这篇带领大家通过修改配置文件来做基本的美化操作。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;左侧状态栏&#34;&gt;左侧状态栏
@@ -116,7 +116,7 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.iconfont.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;iconfont-阿里巴巴矢量图标库&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是可以查看下载下来的svg文件源码，如果有color或者fill之类的属性，需要把值修改位currentColor，像下面这样，不然会出现深色模式没有切换的情况：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-001.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-001.png&#34;
 	
 	
 	
@@ -201,7 +201,7 @@
 &lt;p&gt;这样我们左侧的状态栏就差不多搞定了！&lt;/p&gt;
 &lt;h2 id=&#34;背景图片&#34;&gt;背景图片
 &lt;/h2&gt;&lt;p&gt;如果要插入静态背景图片，需要先准备一张背景图（废话）放在根目录的assets/background下，如果不存在就自行创建文件夹，我随便选了一张：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-002.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-002.png&#34;
 	
 	
 	
@@ -231,7 +231,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后就像这样了：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-003.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-003.png&#34;
 	
 	
 	
@@ -419,7 +419,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;然后就有了如下的效果（这里我用的是鼎列珠海字体）：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/003-004.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/003-004.png&#34;
 	
 	
 	
@@ -991,18 +991,18 @@
         </item>
         <item>
         <title>建站经验[一]利用github加hugo搭建属于自己的博客</title>
-        <link>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+        <link>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Fri, 24 Jan 2025 20:16:00 +0800</pubDate>
         
-        <guid>https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="https://Zhuyh1139.github.io/post/002.png" alt="Featured image of post 建站经验[一]利用github加hugo搭建属于自己的博客" /&gt;&lt;blockquote&gt;
+        <guid>http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="http://localhost:1313/post/002.png" alt="Featured image of post 建站经验[一]利用github加hugo搭建属于自己的博客" /&gt;&lt;blockquote&gt;
 &lt;p&gt;写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;github相关&#34;&gt;Github相关
 &lt;/h2&gt;&lt;p&gt;由于github可以免费托管网页并申请域名，因此，我们选择github存储博客源代码（也是大部分选择的），这里我认为你已经有了github账号，不然也很难看到这篇博客，如果实在没有，点击左侧栏目里的那个像猫一样的图标，花几分钟注册一个吧。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;创建新仓库用来存储博客源码，仓库名为&lt;code&gt;{github用户名}.github.io&lt;/code&gt;，这样可以避免许多问题，比如我的github用户名为Zhuyh1139，那么就像下面这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/002-001.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/002-001.png&#34;
 	
 	
 	
@@ -1047,7 +1047,7 @@
 &lt;p&gt;我在下载主题时采用的是git clone一键安装，但后续我发现了问题，就是如果想使用自动部署hugo网页的话（也就是用github托管整个项目，自动hugo更新上面github.io仓库），会因为theme文件夹下git的是stack创作者的远程仓库，导致无法正常git push更新，因此这里我推荐直接下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;下好的直接解压到theme文件夹下即可，然后把里面的hugo.yaml文件移到根目录下，像这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/002-002.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/002-002.png&#34;
 	
 	
 	
@@ -1127,12 +1127,20 @@
 </description>
         </item>
         <item>
+        <title>手动搭建编译器  基于龙芯汇编与LIGHTIR中间代码</title>
+        <link>http://localhost:1313/p/%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E5%99%A8-%E5%9F%BA%E4%BA%8E%E9%BE%99%E8%8A%AF%E6%B1%87%E7%BC%96%E4%B8%8Elightir%E4%B8%AD%E9%97%B4%E4%BB%A3%E7%A0%81/</link>
+        <pubDate>Fri, 24 Jan 2025 17:50:13 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E6%89%8B%E5%8A%A8%E6%90%AD%E5%BB%BA%E7%BC%96%E8%AF%91%E5%99%A8-%E5%9F%BA%E4%BA%8E%E9%BE%99%E8%8A%AF%E6%B1%87%E7%BC%96%E4%B8%8Elightir%E4%B8%AD%E9%97%B4%E4%BB%A3%E7%A0%81/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>编译原理知识复习</title>
-        <link>https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/</link>
+        <link>http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/</link>
         <pubDate>Sun, 29 Dec 2024 17:13:45 +0800</pubDate>
         
-        <guid>https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/</guid>
-        <description>&lt;img src="https://Zhuyh1139.github.io/post/001.png" alt="Featured image of post 编译原理知识复习" /&gt;&lt;blockquote&gt;
+        <guid>http://localhost:1313/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/</guid>
+        <description>&lt;img src="http://localhost:1313/post/001.png" alt="Featured image of post 编译原理知识复习" /&gt;&lt;blockquote&gt;
 &lt;p&gt;&amp;mdash;&amp;mdash;by zyh 2025.1.6&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
@@ -1188,7 +1196,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;12-词法单元的识别-转换图&#34;&gt;1.2 词法单元的识别-转换图
 &lt;/h2&gt;&lt;p&gt;如下图的例子：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-001.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-001.png&#34;
 	
 	
 	
@@ -1281,7 +1289,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;st:&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-002.png&#34;
+&lt;p&gt;st:&lt;img src=&#34;http://localhost:1313/imgs/001-002.png&#34;
 	
 	
 	
@@ -1291,7 +1299,7 @@
 &gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;s*:&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-003.png&#34;
+&lt;p&gt;s*:&lt;img src=&#34;http://localhost:1313/imgs/001-003.png&#34;
 	
 	
 	
@@ -2374,7 +2382,7 @@ $$&lt;p&gt;
 &lt;/ul&gt;
 &lt;p&gt;后缀表示不需要括号，便于计算机处理表达式。&lt;/p&gt;
 &lt;p&gt;语法树是一种图形化的中间表示，DAG是有向无环图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-004.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-004.png&#34;
 	
 	
 	
@@ -2482,7 +2490,7 @@ solution:&lt;/p&gt;
 &lt;p&gt;受控的副作用：不会对属性求值产生约束，即可以按照任何拓扑顺序求值，不会影响最终结果。&lt;/p&gt;
 &lt;h3 id=&#34;323-抽象语法树的构造&#34;&gt;3.2.3 抽象语法树的构造
 &lt;/h3&gt;&lt;p&gt;抽象语法树(AST)，简称语法树，是分析树的浓缩表示：算符和关键字作为内部节点；语法制导翻译可基于分析树，也可基于语法树。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-005.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-005.png&#34;
 	
 	
 	
@@ -2617,7 +2625,7 @@ solution:&lt;/p&gt;
 &lt;h4 id=&#34;3241-s属性定义的sdt两种实现方式&#34;&gt;3.2.4.1 S属性定义的SDT两种实现方式
 &lt;/h4&gt;&lt;h5 id=&#34;32411-先建树后计算&#34;&gt;3.2.4.1.1 先建树，后计算
 &lt;/h5&gt;&lt;p&gt;建立语法分析树，将语义动作看作是虚拟结点，从左到右，深度优先遍历分析树，在访问虚拟结点时执行相应动作。如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-006.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-006.png&#34;
 	
 	
 	
@@ -2628,7 +2636,7 @@ solution:&lt;/p&gt;
 &lt;h5 id=&#34;32412-边分析边计算&#34;&gt;3.2.4.1.2 边分析，边计算
 &lt;/h5&gt;&lt;p&gt;综合属性通过自底向上的LR来计算，当归约发生时执行相应语义动作。&lt;/p&gt;
 &lt;p&gt;可以通过扩展的LR语法分析栈来实现，每一个栈元素包含状态，文法符号和综合属性这三个域。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-007.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-007.png&#34;
 	
 	
 	
@@ -2747,7 +2755,7 @@ solution:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;B-&amp;gt;B1 or B2&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-008.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-008.png&#34;
 	
 	
 	
@@ -2776,7 +2784,7 @@ solution:&lt;/p&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;B-&amp;gt;B1 and B2&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-009.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-009.png&#34;
 	
 	
 	
@@ -3663,7 +3671,7 @@ OUT[B]=gen_B \cup (IN[B]-kill_B)\\
 OUT[ENTRY]=\emptyset
 $$&lt;p&gt;
 如下面的例子：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-010.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-010.png&#34;
 	
 	
 	
@@ -3762,7 +3770,7 @@ OUT[ENTRY]=\emptyset
 $$&lt;p&gt;
 注意这里用的是交集，求的是最大解。&lt;/p&gt;
 &lt;p&gt;eg:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-011.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-011.png&#34;
 	
 	
 	
@@ -3863,7 +3871,7 @@ OUT[B]=\cup IN[S]\{S是B的后继\}\\
 IN[B]=use_B \cup (OUT[B]-def_B)
 $$&lt;p&gt;
 eg:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-012.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-012.png&#34;
 	
 	
 	
@@ -3987,7 +3995,7 @@ eg:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;d = a - d
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-013.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-013.png&#34;
 	
 	
 	
@@ -4030,7 +4038,7 @@ eg:&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;有如下的DAG：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-014.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-014.png&#34;
 	
 	
 	
@@ -4078,7 +4086,7 @@ eg:&lt;/p&gt;
 &lt;blockquote class=&#34;alert alert-note&#34;&gt;
     &lt;p&gt;其实就是找从某个结点p开始的不走过n这条路的路径到达n，把路径起点加到自然循环中。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;eg:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Zhuyh1139.github.io/imgs/001-015.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/imgs/001-015.png&#34;
 	
 	
 	
