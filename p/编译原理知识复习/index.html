@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="编译原理知识复习">
+<link rel="stylesheet" href="/scss/style.min.79778804a771dc130d7089f1049b111129b334d4d5d3505894a60cd3735cf7b6.css"><meta property='og:title' content="编译原理知识复习">
 <meta property='og:description' content=" &mdash;&mdash;by zyh 2025.1.6\n1.词法分析\r功能：将输入字符串识别为有意义的子串，即词法单元(token)\n1.1 词法单元的描述-正则式\r正则表达式(Regular Expression)是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&quot;元字符&quot;），可以用来描述和匹配字符串的特定模式。\n">
 <meta property='og:url' content='https://Zhuyh1139.github.io/p/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/'>
 <meta property='og:site_name' content='陌辞咖啡馆'>
@@ -595,10 +595,8 @@
 <p>DFA的化简：先从终态集合和非终态集合出发，如果从非终态集合输入字符得到的输出集合不属于任何一个分割后的集合的子集，则可以继续分割，否则分割停止，最后可以得到化简后的DFA。</p>
 <h1 id="2语法分析">2.语法分析
 </h1><h2 id="21-上下文无关文法">2.1 上下文无关文法
-</h2><blockquote>
-<p>[!NOTE]</p>
-<p>语法分析的目的是教会计算机判断输入合法性。</p>
-</blockquote>
+</h2><blockquote class="alert alert-note">
+    <p>语法分析的目的是教会计算机判断输入合法性。</p></blockquote>
 <p>上下文无关文法(CFG)就是说这个文法中所有的产生式左边只有一个非终结符，也就是说，只要找到符合产生式右边的串，就可以把它归约为对应的非终结符。</p>
 <hr>
 $$
@@ -609,18 +607,14 @@ $$<ul>
 <li>S是开始符号，属于非终结符，是该文法中最大的语法成分，分析开始的地方。</li>
 <li>P是产生式集合，产生式描述了将终结符和非终结符组合成串的方法。</li>
 </ul>
-<blockquote>
-<p>[!CAUTION]</p>
-<p>终结符集合与非终结符集合的交集为空。</p>
-</blockquote>
+<blockquote class="alert alert-caution">
+    <p>终结符集合与非终结符集合的交集为空。</p></blockquote>
 <p>推导：是从文法推出文法所描述的语言中所包含的合法串集合的动作。</p>
 <p>也就是把符号串中的非终结符用其产生式右部的串来代替，有最左推导与最右推导等多种方式。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p><strong>CFG与正则表达式的联系和区别：</strong></p>
+<blockquote class="alert alert-note">
+    <p><strong>CFG与正则表达式的联系和区别：</strong></p>
 <p>正则表达式可以定义一些简单的语言，能表示给定结构的固定次数的重复或者没有指定次数的重复，但不能用于描述配对或嵌套的结构，因为有限自动机无法记录访问同一状态的次数；</p>
-<p>它们两个都能表示语言，能用正则表达式表示的语言都能用CFG表示。</p>
-</blockquote>
+<p>它们两个都能表示语言，能用正则表达式表示的语言都能用CFG表示。</p></blockquote>
 <p>文法的二义性：文法的某些句子存在不止一种最左(最右)推导， 或者不止一棵分析树，则该文法是二义的。</p>
 <p>产生原因：有些操作都是左（右）结合的，但不同的优先级在文法中没有表达出来。</p>
 <p>消除办法：定义运算优先级和结合律。</p>
@@ -713,10 +707,8 @@ $$
 </ol>
 </li>
 </ul>
-<blockquote>
-<p>[!NOTE]</p>
-<p>注意FIRST集合和FOLLOW集合都是针对非终结符的，且FIRST集合中只会出现终结符和ε</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>注意FIRST集合和FOLLOW集合都是针对非终结符的，且FIRST集合中只会出现终结符和ε</p></blockquote>
 <p>an example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -825,10 +817,8 @@ $$
 <h2 id="24-自底向上分析方法">2.4 自底向上分析方法
 </h2><h3 id="241-归约">2.4.1 归约
 </h3><p>每一步，特定子串被替换为相匹配的某个产生式左部的非终结符，最终，把输入串归约成文法的开始符号。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>归约是最右推导的逆过程。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>归约是最右推导的逆过程。</p></blockquote>
 <h3 id="242-句柄">2.4.2 句柄
 </h3><p>句柄(Handles)是指可规约串，和某个产生式右部匹配。</p>
 <p>句柄的右边仅含终结符，如果文法二义，那么句柄可能不唯一。</p>
@@ -956,11 +946,9 @@ $$<div class="highlight"><div class="chroma">
 </span></span><span class="line"><span class="cl">F-&gt;·id
 </span></span></code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>[!IMPORTANT]</p>
-<p>这里的每个I构造规则：如果点后是产生式A-&gt;a，且A-&gt;·a不在闭包中，加入。</p>
-<p>人话：点后面如果是产生式就把产生式从头加个点添加到项目集中，单个项目集中重复的不算。</p>
-</blockquote>
+</div><blockquote class="alert alert-important">
+    <p>这里的每个I构造规则：如果点后是产生式A-&gt;a，且A-&gt;·a不在闭包中，加入。</p>
+<p>人话：点后面如果是产生式就把产生式从头加个点添加到项目集中，单个项目集中重复的不算。</p></blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1127,10 +1115,8 @@ $$<div class="highlight"><div class="chroma">
 <li>如果A-&gt;α·在Ii中，对FOLLOW(A)中所有a，置action[i,a]为rj，j是产生式A-&gt;α的初始编号</li>
 <li>如果S&rsquo;-&gt;S·在Ii中，置action[i,$]为acc</li>
 </ul>
-<blockquote>
-<p>[!IMPORTANT]</p>
-<p>在这个规则中s表示移进，r表示规约，可以看出，如果一个Ii中同时存在·在末尾与在中间的情况时，会出现action[i,a]同时置为rj与sj的情况，也就是移进-归约冲突，此时比较两个左式的FOLLOW集，如果下一个输入符号属于归约的那个左式的FOLLOW集，那么使用归约，反之使用移进。比如该题的I2和I9就存在移进归约冲突，但计算FOLLOW(E)={),+,$},I2和I9的下一个符号为*，不在FOLLOW(E)中，所以均采用移进。</p>
-</blockquote>
+<blockquote class="alert alert-important">
+    <p>在这个规则中s表示移进，r表示规约，可以看出，如果一个Ii中同时存在·在末尾与在中间的情况时，会出现action[i,a]同时置为rj与sj的情况，也就是移进-归约冲突，此时比较两个左式的FOLLOW集，如果下一个输入符号属于归约的那个左式的FOLLOW集，那么使用归约，反之使用移进。比如该题的I2和I9就存在移进归约冲突，但计算FOLLOW(E)={),+,$},I2和I9的下一个符号为*，不在FOLLOW(E)中，所以均采用移进。</p></blockquote>
 <p>该例的SLR分析表如下所示：</p>
 <p>(1)E-&gt;E+T</p>
 <p>(2)E-&gt;T</p>
@@ -1303,17 +1289,13 @@ $$<div class="highlight"><div class="chroma">
 <h3 id="252-lr分析">2.5.2 LR分析
 </h3><p>SLR文法产生移进归约冲突，但该文法不是二义的。</p>
 <p>在识别活前缀DFA的状态中，增加信息，排除一些不正确的归约操作。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>SLR只是简单地考察下一个输入符号b是否属于与归约项目A→α相关联的FOLLOW(A)，但b∈FOLLOW(A)只是归约α的一个必要条件，而非充分条件。归约条件被放宽松了。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>SLR只是简单地考察下一个输入符号b是否属于与归约项目A→α相关联的FOLLOW(A)，但b∈FOLLOW(A)只是归约α的一个必要条件，而非充分条件。归约条件被放宽松了。</p></blockquote>
 <p>项目集：LR(0)=&gt;LR(1)</p>
 <p>LR(1)项目由两个分量组成，第一分量为SLR中的项，第二分量为搜索符（向前看符号），1代表了搜索符a的长度。</p>
 <p>对于[A-&gt;α·β,a]当β不为空时，a不起作用，当β为空时，如果下一个输入符号是a，将按照A-&gt;α进行归约，a的集合是FOLLOW(A)的子集。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>LR(1)闭包计算方法与LR(0)有所不同，若有项目[A-&gt;α·Bβ,a]在闭包中，而B-&gt;γ是文法中的产生式，b是FIRST(βa)中的元素，则[B-&gt;γ，b]也属于闭包。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>LR(1)闭包计算方法与LR(0)有所不同，若有项目[A-&gt;α·Bβ,a]在闭包中，而B-&gt;γ是文法中的产生式，b是FIRST(βa)中的元素，则[B-&gt;γ，b]也属于闭包。</p></blockquote>
 $$
 0)S'->S\\
 1)S->L=R\\
@@ -1739,20 +1721,16 @@ solution:</p>
 </div>
 </div><h3 id="322-l属性定义">3.2.2 L属性定义
 </h3><p>在一个产生式所关联的各属性之间，依赖图的边可以从左到右，但不能从右到左，可以在LR分析器或LL分析器中实现，更加一般化。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>依赖图(dependency graph)是一个描述了分析树中结点属性间依赖关系的有向图，其中属性值为点，属性的依赖关系为边（如果X.a的值依赖于Y.b的值，则依赖图中有从Y.b的结点指向X.a的结点的有向边。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>依赖图(dependency graph)是一个描述了分析树中结点属性间依赖关系的有向图，其中属性值为点，属性的依赖关系为边（如果X.a的值依赖于Y.b的值，则依赖图中有从Y.b的结点指向X.a的结点的有向边。</p></blockquote>
 <p>对于任意一个产生式A-&gt;X1X2&hellip;Xn，其右部符号Xi的继承属性仅依赖于下列属性：</p>
 <ul>
 <li>A的继承属性</li>
 <li>产生式Xi左边符号X1X2&hellip;Xi-1的属性</li>
 <li>Xi本身的属性，但Xi全部属性不能在依赖图中形成环路</li>
 </ul>
-<blockquote>
-<p>[!NOTE]</p>
-<p>不能依赖A的综合属性的原因：由于A的综合属性可能依赖Xi的属性，包括Xi的综合属性和继承属性，因此可能形成环路。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>不能依赖A的综合属性的原因：由于A的综合属性可能依赖Xi的属性，包括Xi的综合属性和继承属性，因此可能形成环路。</p></blockquote>
 <p>一个例子：</p>
 <div class="table-wrapper"><table>
   <thead>
@@ -1945,10 +1923,8 @@ solution:</p>
 ></p>
 <p>在上图中，L-&gt;En的代码段：栈中先存入E，后存入n，栈顶指针top指向n，故top-1指向E，打印其在栈的对应值的域即可；E-&gt;E1+T的代码段：栈中先后存入E1,+,T，栈顶指针top指向T，故top-2指向E1，直接弹出三个元素，下一个要存的E可以放在top-2的位置上；其余的类似，不作过多解释。</p>
 <h4 id="3242-l属性定义的sdt两种实现方式">3.2.4.2 L属性定义的SDT两种实现方式
-</h4><blockquote>
-<p>[!IMPORTANT]</p>
-<p>S属性定义属于L属性定义。</p>
-</blockquote>
+</h4><blockquote class="alert alert-important">
+    <p>S属性定义属于L属性定义。</p></blockquote>
 <p>消除左递归的算术表达式语法制导定义是L-SDD，后缀SDT在这里并不适用。</p>
 <p>将L-SDD转换为SDT的规则：</p>
 <ul>
@@ -2342,10 +2318,8 @@ solution:</p>
 </div>
 </div><h2 id="34-类型表达式">3.4 类型表达式
 </h2><p>类型表达式(type expression):基本类型是类型表达式，可为类型表达式命名，类名也是类型表达式，将类型构造算子作用于类型表达式可以构造新的类型表达式。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>比如数组类型构造算子array和类型表达式integer，int[3]的类型表达式为array(3,integer)，在此基础上再作用一遍为array(2,array(3,integer))，表示int[2][3]仍为类型表达式。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>比如数组类型构造算子array和类型表达式integer，int[3]的类型表达式为array(3,integer)，在此基础上再作用一遍为array(2,array(3,integer))，表示int[2][3]仍为类型表达式。</p></blockquote>
 <p>常见构造算子：</p>
 <ul>
 <li>数组类型构造算子array</li>
@@ -3386,10 +3360,8 @@ eg:</p>
 </ol>
 <p>自然循环：是一种适合于优化的循环，具有如下性质：有唯一的入口结点，叫做首结点，首结点支配该循环中所有结点；至少存在一条回边进入该循环首结点。</p>
 <p>给定一条回边n-&gt;d，它所对应自然循环包含d加上不经过d能到达n的所有结点，且结点d是该循环的首结点。</p>
-<blockquote>
-<p>[!NOTE]</p>
-<p>其实就是找从某个结点p开始的不走过n这条路的路径到达n，把路径起点加到自然循环中。</p>
-</blockquote>
+<blockquote class="alert alert-note">
+    <p>其实就是找从某个结点p开始的不走过n这条路的路径到达n，把路径起点加到自然循环中。</p></blockquote>
 <p>eg:</p>
 <p><img src="/imgs/001-015.png"
 	
@@ -3703,6 +3675,180 @@ eg:</p>
 </script>
 <script src=https://Zhuyh1139.github.io/background/sakura.js></script>
 
+
+
+<style>
+  #TableOfContents > ul, ol {
+      ul, ol {
+          display: none;
+      }
+      .open {
+          display: block;
+      }
+  }
+</style>
+
+<script>
+  function initTocHide() {
+      
+      let toc = document.querySelector(".widget--toc");
+      if (!toc) {
+          return;
+      }
+      
+      window.addEventListener('scroll', function() {
+          
+          let openUl = document.querySelectorAll(".open");
+          if (openUl.length > 0) {
+            openUl.forEach((ul) => {
+              ul.classList.remove("open")
+            })
+          }
+          
+          let currentLi = document.querySelector(".active-class");
+          if (!currentLi) {
+              return
+          }
+          
+          if (currentLi.children.length > 1) {
+              currentLi.children[1].classList.add("open")
+          }
+          
+          let ul = currentLi.parentElement;
+          do {
+              ul.classList.add("open");
+              ul = ul.parentElement.parentElement
+          } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+      });
+  }
+  initTocHide()
+</script>
+
+
+<style>
+  #backTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      z-index: 99;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-image: url(https://Zhuyh1139.github.io/icons/backTop.svg);
+  }
+</style>
+
+<script>
+  
+
+  function initScrollTop() {
+      let rightSideBar = document.querySelector(".right-sidebar");
+      if (!rightSideBar) {
+          return;
+      }
+      
+      let btn = document.createElement("div");
+      btn.id = "backTopBtn";
+      btn.onclick = backToTop
+      rightSideBar.appendChild(btn)
+      
+      window.onscroll = function() {
+          
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+  }
+
+  
+
+  function backToTop(){
+      window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  initScrollTop();
+</script>
+
+<style>
+  .highlight {
+       
+      max-height: 400px;
+      overflow: hidden;
+  }
+
+  .code-show {
+      max-height: none !important;
+  }
+
+  .code-more-box {
+      width: 100%;
+      padding-top: 78px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+  }
+
+  .code-more-btn {
+      display: block;
+      margin: auto;
+      width: 44px;
+      height: 22px;
+      background: #f0f0f5;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding-top: 6px;
+      cursor: pointer;
+  }
+
+  .code-more-img {
+      cursor: pointer !important;
+      display: block;
+      margin: auto;
+      width: 22px;
+      height: 16px;
+  }
+</style>
+
+<script>
+function initCodeMoreBox() {
+  let codeBlocks = document.querySelectorAll(".highlight");
+  if (!codeBlocks) {
+    return;
+  }
+  codeBlocks.forEach(codeBlock => {
+    
+    if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+      return;
+    }
+    
+    
+    let codeMoreBox = document.createElement('div');
+    codeMoreBox.classList.add('code-more-box');
+    
+    let codeMoreBtn = document.createElement('span');
+    codeMoreBtn.classList.add('code-more-btn');
+    codeMoreBtn.addEventListener('click', () => {
+      codeBlock.classList.add('code-show');
+      codeMoreBox.style.display = 'none';
+    })
+    
+    let img = document.createElement('img');
+    img.classList.add('code-more-img');
+    img.src = "https://Zhuyh1139.github.io/icons/codeMore.png"
+    
+    codeMoreBtn.appendChild(img);
+    codeMoreBox.appendChild(codeMoreBtn);
+    codeBlock.appendChild(codeMoreBox)
+  })
+}
+
+initCodeMoreBox();
+</script>
 
     </body>
 </html>

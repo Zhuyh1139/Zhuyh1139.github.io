@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。\n">
 <title>建站经验[一]利用github加hugo搭建属于自己的博客</title>
 
-<link rel='canonical' href='http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/'>
+<link rel='canonical' href='https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/'>
 
-<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="建站经验[一]利用github加hugo搭建属于自己的博客">
+<link rel="stylesheet" href="/scss/style.min.79778804a771dc130d7089f1049b111129b334d4d5d3505894a60cd3735cf7b6.css"><meta property='og:title' content="建站经验[一]利用github加hugo搭建属于自己的博客">
 <meta property='og:description' content=" 写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。\n">
-<meta property='og:url' content='http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/'>
+<meta property='og:url' content='https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/'>
 <meta property='og:site_name' content='陌辞咖啡馆'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-24T20:16:00&#43;08:00'/><meta property='article:modified_time' content='2025-01-24T20:16:00&#43;08:00'/><meta property='og:image' content='http://localhost:1313/post/002.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-01-24T20:16:00&#43;08:00'/><meta property='article:modified_time' content='2025-01-24T20:16:00&#43;08:00'/><meta property='og:image' content='https://Zhuyh1139.github.io/post/002.png' />
 <meta name="twitter:title" content="建站经验[一]利用github加hugo搭建属于自己的博客">
 <meta name="twitter:description" content=" 写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:1313/post/002.png' /><link rel="alternate" type="application/json" href="http://localhost:1313/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.json">
+    <meta name="twitter:image" content='https://Zhuyh1139.github.io/post/002.png' /><link rel="alternate" type="application/json" href="https://Zhuyh1139.github.io/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%B8%80%E5%88%A9%E7%94%A8github%E5%8A%A0hugo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.json">
     </head>
     <body class="
     article-page
@@ -233,7 +233,39 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#github相关">Github相关</a></li>
+    <li><a href="#hugo相关">Hugo相关</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -315,8 +347,8 @@
     <blockquote>
 <p>写在前面：在一次稀松平常的复习当中，我在查找相关资料时发现了一篇博客，不同于之前常见的CSDN，知乎与博客网等，那篇博客界面简洁清晰，还十分美观，后面我又发现了博主是自己搭建的属于自己的博客，相当于个人主页加微型社区了，我当时就对其十分感兴趣，于是在期末考试周硬生生完成了建站的基础工作并发布了第一篇博客，后续也是不断对其进行美化与建设。大多数个人博客建设者发布的第一篇博客都是记录建站经历的，那么秉承着“前人栽树，后人乘凉”的原则，这里我也将我在网上学习到的经验整合分享给大家，来尽可能少走弯路。</p>
 </blockquote>
-<h1 id="github相关">Github相关
-</h1><p>由于github可以免费托管网页并申请域名，因此，我们选择github存储博客源代码（也是大部分选择的），这里我认为你已经有了github账号，不然也很难看到这篇博客，如果实在没有，点击左侧栏目里的那个像猫一样的图标，花几分钟注册一个吧。</p>
+<h2 id="github相关">Github相关
+</h2><p>由于github可以免费托管网页并申请域名，因此，我们选择github存储博客源代码（也是大部分选择的），这里我认为你已经有了github账号，不然也很难看到这篇博客，如果实在没有，点击左侧栏目里的那个像猫一样的图标，花几分钟注册一个吧。</p>
 <hr>
 <p>创建新仓库用来存储博客源码，仓库名为<code>{github用户名}.github.io</code>，这样可以避免许多问题，比如我的github用户名为Zhuyh1139，那么就像下面这样：</p>
 <p><img src="/imgs/002-001.png"
@@ -329,8 +361,8 @@
 ></p>
 <p>这里注意仓库要设为公开(public)，分支使用main。</p>
 <p>建完之后就可以先不用管了，接下来我们要进行hugo相关的工作了。</p>
-<h1 id="hugo相关">Hugo相关
-</h1><p>首先需要下载hugo，记得安装extend版本的，不然不支持sass/scss扩展，安装方法非常简单，如果你跟我一样是window系统（我是win11）那么可以直接在终端中输入：</p>
+<h2 id="hugo相关">Hugo相关
+</h2><p>首先需要下载hugo，记得安装extend版本的，不然不支持sass/scss扩展，安装方法非常简单，如果你跟我一样是window系统（我是win11）那么可以直接在终端中输入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -496,6 +528,34 @@
 
     
 
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E4%BA%8Cstack%E4%B8%BB%E9%A2%98%E5%9F%BA%E6%9C%AC%E7%BE%8E%E5%8C%96%E6%93%8D%E4%BD%9C/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post/003.png" loading="lazy" data-key="" data-hash="/post/003.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">建站经验[二]stack主题基本美化操作</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
      
     
         
@@ -633,7 +693,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.05855e03984e0c21563e042e67eb3d1dbf10a0e7f128d98ef596b3fcb29bf3fa.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -708,8 +768,182 @@
     });
   }
 </script>
-<script src=http://localhost:1313/background/sakura.js></script>
+<script src=https://Zhuyh1139.github.io/background/sakura.js></script>
 
+
+
+<style>
+  #TableOfContents > ul, ol {
+      ul, ol {
+          display: none;
+      }
+      .open {
+          display: block;
+      }
+  }
+</style>
+
+<script>
+  function initTocHide() {
+      
+      let toc = document.querySelector(".widget--toc");
+      if (!toc) {
+          return;
+      }
+      
+      window.addEventListener('scroll', function() {
+          
+          let openUl = document.querySelectorAll(".open");
+          if (openUl.length > 0) {
+            openUl.forEach((ul) => {
+              ul.classList.remove("open")
+            })
+          }
+          
+          let currentLi = document.querySelector(".active-class");
+          if (!currentLi) {
+              return
+          }
+          
+          if (currentLi.children.length > 1) {
+              currentLi.children[1].classList.add("open")
+          }
+          
+          let ul = currentLi.parentElement;
+          do {
+              ul.classList.add("open");
+              ul = ul.parentElement.parentElement
+          } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+      });
+  }
+  initTocHide()
+</script>
+
+
+<style>
+  #backTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      z-index: 99;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-image: url(https://Zhuyh1139.github.io/icons/backTop.svg);
+  }
+</style>
+
+<script>
+  
+
+  function initScrollTop() {
+      let rightSideBar = document.querySelector(".right-sidebar");
+      if (!rightSideBar) {
+          return;
+      }
+      
+      let btn = document.createElement("div");
+      btn.id = "backTopBtn";
+      btn.onclick = backToTop
+      rightSideBar.appendChild(btn)
+      
+      window.onscroll = function() {
+          
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              btn.style.display = "block";
+          } else {
+              btn.style.display = "none";
+          }
+      };
+  }
+
+  
+
+  function backToTop(){
+      window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  initScrollTop();
+</script>
+
+<style>
+  .highlight {
+       
+      max-height: 400px;
+      overflow: hidden;
+  }
+
+  .code-show {
+      max-height: none !important;
+  }
+
+  .code-more-box {
+      width: 100%;
+      padding-top: 78px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+  }
+
+  .code-more-btn {
+      display: block;
+      margin: auto;
+      width: 44px;
+      height: 22px;
+      background: #f0f0f5;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding-top: 6px;
+      cursor: pointer;
+  }
+
+  .code-more-img {
+      cursor: pointer !important;
+      display: block;
+      margin: auto;
+      width: 22px;
+      height: 16px;
+  }
+</style>
+
+<script>
+function initCodeMoreBox() {
+  let codeBlocks = document.querySelectorAll(".highlight");
+  if (!codeBlocks) {
+    return;
+  }
+  codeBlocks.forEach(codeBlock => {
+    
+    if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+      return;
+    }
+    
+    
+    let codeMoreBox = document.createElement('div');
+    codeMoreBox.classList.add('code-more-box');
+    
+    let codeMoreBtn = document.createElement('span');
+    codeMoreBtn.classList.add('code-more-btn');
+    codeMoreBtn.addEventListener('click', () => {
+      codeBlock.classList.add('code-show');
+      codeMoreBox.style.display = 'none';
+    })
+    
+    let img = document.createElement('img');
+    img.classList.add('code-more-img');
+    img.src = "https://Zhuyh1139.github.io/icons/codeMore.png"
+    
+    codeMoreBtn.appendChild(img);
+    codeMoreBox.appendChild(codeMoreBtn);
+    codeBlock.appendChild(codeMoreBox)
+  })
+}
+
+initCodeMoreBox();
+</script>
 
     </body>
 </html>
