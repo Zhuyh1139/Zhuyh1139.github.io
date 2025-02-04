@@ -2,10 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 陌辞咖啡馆</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://Zhuyh1139.github.io/page/</link>
         <description>Recent content in Pages on 陌辞咖啡馆</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Example Person</copyright><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Example Person</copyright><atom:link href="https://Zhuyh1139.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于</title>
+        <link>https://Zhuyh1139.github.io/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://Zhuyh1139.github.io/about/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;关于我：某985计算机专业在读本科生，喜欢做点自己喜欢做的事情~&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;序言&#34;&gt;序言
+&lt;/h2&gt;&lt;p&gt;欢迎光临陌辞咖啡馆！陌生人，感谢您愿意花上几分钟时间来了解我，近年来互联网飞速发展，在内容爆炸的时代，能够在这里相遇属实是难得的缘分。不妨把这里当做闲暇外出时偶然间推门而入的咖啡小馆，点上一杯咖啡，听听店长我的一番闲言碎语。&lt;/p&gt;
+&lt;p&gt;“陌辞”&amp;ndash;取自“陌上花开，可缓缓归矣”的诗意，我希望，这个小小的空间，能让您暂时放下匆忙的脚步，像归人般，在咖啡的氤氲中，慢慢品味生活，享受片刻的宁静。&lt;/p&gt;
+&lt;p&gt;为什么要写个人博客呢？正如我在建站经历中提到的，源于一次看到别人的博客的经历，不同于CSDN与知乎等国内常见博客网，界面十分简洁干净，当时就吸引到了我，而且在后续了解到，可以自己魔改折腾，这非常对我胃口，再加上我自己之前有写CSDN的习惯，于是就决定了设立个人博客！写博客的主要目的就是分享经验以及记录学习过程，让大家避免踩雷，解决问题，学习知识。如果某篇博客有帮助到您或带给了您启发，那就再好不过了；如果您有什么问题，或者我的博客有什么错误与问题，也欢迎您在评论区指出！&lt;/p&gt;
+&lt;p&gt;我会努力经营陌辞咖啡馆，感谢您的支持！&lt;/p&gt;
+&lt;h2 id=&#34;闲暇&#34;&gt;闲暇
+&lt;/h2&gt;&lt;p&gt;喜欢看番与打游戏。&lt;/p&gt;
+&lt;p&gt;几部喜欢的番：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《中二病也要谈恋爱》&lt;/li&gt;
+&lt;li&gt;《无职转生》&lt;/li&gt;
+&lt;li&gt;《为美好的世界献上祝福》&lt;/li&gt;
+&lt;li&gt;《某科学的超电磁炮》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有很多优秀且给我留下深刻印象的番，由于篇幅原因不再赘述。&lt;/p&gt;
+&lt;p&gt;玩LOL，联盟一区铂金小菜鸡一枚~&lt;/p&gt;
+&lt;p&gt;曾经喜欢玩原神，现在玩鸣潮与steam单机游戏。&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>

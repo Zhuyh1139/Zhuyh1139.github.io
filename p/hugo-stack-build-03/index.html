@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="观我旧往，同我仰春">
-<title>404 Page not found</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="持续更新建站经验">
+<title>建站经验[三]评论系统与其它细节</title>
 
-<link rel='canonical' href='https://Zhuyh1139.github.io/404.html'>
+<link rel='canonical' href='https://Zhuyh1139.github.io/p/hugo-stack-build-03/'>
 
-<link rel="stylesheet" href="/scss/style.min.79778804a771dc130d7089f1049b111129b334d4d5d3505894a60cd3735cf7b6.css"><meta property='og:title' content="404 Page not found">
-<meta property='og:description' content="观我旧往，同我仰春">
-<meta property='og:url' content='https://Zhuyh1139.github.io/404.html'>
+<link rel="stylesheet" href="/scss/style.min.79778804a771dc130d7089f1049b111129b334d4d5d3505894a60cd3735cf7b6.css"><meta property='og:title' content="建站经验[三]评论系统与其它细节">
+<meta property='og:description' content="持续更新建站经验">
+<meta property='og:url' content='https://Zhuyh1139.github.io/p/hugo-stack-build-03/'>
 <meta property='og:site_name' content='陌辞咖啡馆'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-02-04T20:58:58&#43;08:00 '/>
-<meta name="twitter:title" content="404 Page not found">
-<meta name="twitter:description" content="观我旧往，同我仰春">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-04T20:58:58&#43;08:00'/><meta property='article:modified_time' content='2025-02-04T20:58:58&#43;08:00'/><meta property='og:image' content='https://Zhuyh1139.github.io/post/004.png' />
+<meta name="twitter:title" content="建站经验[三]评论系统与其它细节">
+<meta name="twitter:description" content="持续更新建站经验"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://Zhuyh1139.github.io/post/004.png' /><link rel="alternate" type="application/json" href="https://Zhuyh1139.github.io/p/hugo-stack-build-03/index.json">
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -230,45 +233,403 @@
     </ol>
 </aside>
 
-            <main class="main full-width">
-    <div class="not-found-card">
-        <h1 class="article-title">404 错误</h1>
-        <h2 class="article-subtitle">页面不存在</h2>
-    </div><form action="/search/" class="search-form widget" data-json="https://Zhuyh1139.github.io/search/index.json">
-            <p>
-                <label>搜索</label>
-                <input id="searchInput" name="keyword" required placeholder="输入关键词..." />
+    <aside class="sidebar right-sidebar sticky">
+        
             
-                <button title="搜索">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
 </svg>
 
 
 
-                </button>
-            </p>
-        </form>
-
-        <div class="search-result">
-            <h3 class="search-result--title section-title"></h3>
-            <div class="search-result--list article-list--compact"></div>
         </div>
+        <h2 class="widget-title section-title">目录</h2>
         
-        <script>
-            window.searchResultTitleTemplate = "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
-        </script><script type="text/javascript" src="/ts/search.js" defer></script>
-
-        <script>
-            const wrongUrl = new URL(window.location.href);
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#左侧导航栏">左侧导航栏</a></li>
+    <li><a href="#评论区">评论区</a>
+      <ol>
+        <li><a href="#waline">waline</a></li>
+        <li><a href="#gitalk">gitalk</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
 
             
-            const searchKeyword = wrongUrl.pathname.split(/[/|-]/).join(' ').trim();
+        
+    </aside>
 
-            document.getElementById('searchInput').setAttribute('value', searchKeyword);
-        </script><footer class="site-footer">
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/hugo-stack-build-03/">
+                
+                    <img src="/post/004.png" loading="lazy" alt="Featured image of post 建站经验[三]评论系统与其它细节" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%BB%BA%E7%AB%99%E7%BB%8F%E5%8E%86/" >
+                建站经历
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/hugo-stack-build-03/">建站经验[三]评论系统与其它细节</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            持续更新建站经验
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 04, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="左侧导航栏">左侧导航栏
+</h2><p>可能你已经在我第一篇建站经验里发现了问题，就是我们左侧的导航栏点进去后都是404，这是因为我们还没有创建对应的页面，在根目录content下创建page文件夹，用来存放我们的相关页面，我这里在page文件夹下创建了三个md文件，对应我左侧导航栏的三个：about.md，archives.md，search.md，这里要注意我们在建站经验[一]中写的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">- identifier: archives
+</span></span><span class="line"><span class="cl">          name: 归档
+</span></span><span class="line"><span class="cl">          url: /archives/
+</span></span><span class="line"><span class="cl">          weight: 2
+</span></span><span class="line"><span class="cl">          params:
+</span></span><span class="line"><span class="cl">              icon: archives
+</span></span><span class="line"><span class="cl">              newTab: false
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里的url是我们对应页面的url，一般来说，hugo创建页面默认标题就是域名，但注意stack配置文件中这句：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">permalinks:
+</span></span><span class="line"><span class="cl">    post: /p/:slug/
+</span></span><span class="line"><span class="cl">    page: /:slug/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这段规定了域名的命名规则，因此我们可以把前面三个md文件写成这样：（以about.md为例）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title : &#34;关于&#34;
+</span></span><span class="line"><span class="cl">slug: about
+</span></span><span class="line"><span class="cl">layout : &#34;关于&#34;
+</span></span><span class="line"><span class="cl">hidden : false
+</span></span><span class="line"><span class="cl">comments :  true
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>下面就写你想要的内容即可，而archives.md，search.md里面只需引入类似上面的即可，不需要正文内容。</p>
+<h2 id="评论区">评论区
+</h2><p>这里提供两种评论系统搭建：waline与gitalk，两者各有优劣，取决于你个人爱好。</p>
+<h3 id="waline">waline
+</h3><p>waline官方文档写的比较详细，按照上面的步骤一步一步来即可：</p>
+<p><a class="link" href="https://waline.js.org/guide/get-started/"  target="_blank" rel="noopener"
+    >快速上手 | Waline</a></p>
+<p>获得了评论区服务端地址后<code>https://&lt;xxxxxx&gt;.vercel.app/</code>访问<code>https://&lt;xxxxxx&gt;.vercel.app/ui/register</code>来注册管理员身份，这里第一个注册的人会自动成为管理员，所以要及时。</p>
+<p>上面的操作弄完之后，在配置文件中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">comments:
+</span></span><span class="line"><span class="cl">        enabled: true
+</span></span><span class="line"><span class="cl">        provider: waline
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        waline:
+</span></span><span class="line"><span class="cl">            serverURL: &lt;your-server-url&gt;
+</span></span><span class="line"><span class="cl">            lang: zh-CN
+</span></span><span class="line"><span class="cl">            visitor: true
+</span></span><span class="line"><span class="cl">            pageview:
+</span></span><span class="line"><span class="cl">            emoji:
+</span></span><span class="line"><span class="cl">                - https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili
+</span></span><span class="line"><span class="cl">                - https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji
+</span></span><span class="line"><span class="cl">                - https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo
+</span></span><span class="line"><span class="cl">            requiredMeta:
+</span></span><span class="line"><span class="cl">                - name
+</span></span><span class="line"><span class="cl">                - email
+</span></span><span class="line"><span class="cl">                - url
+</span></span><span class="line"><span class="cl">            placeholder: 欢迎留下宝贵的评论！
+</span></span><span class="line"><span class="cl">            locale:
+</span></span><span class="line"><span class="cl">                admin: 站长
+</span></span><span class="line"><span class="cl">                placeholder: 还没有人评论哦！快来抢沙发吧~
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里的表情你可以自行选择，还有很多，在waline官方文档中都有。</p>
+<h3 id="gitalk">gitalk
+</h3><p>首先我们需要创建一个github application：<a class="link" href="https://github.com/settings/applications/new"  target="_blank" rel="noopener"
+    >New OAuth Application</a></p>
+<p>其中需要填写的有：</p>
+<ul>
+<li>application name：随意起名</li>
+<li>homepage url：你的博客地址，记得加https</li>
+<li>authorization callback url：和上面一样，填博客地址</li>
+</ul>
+<p>点<code>register application</code>后，会告诉你<code>client ID</code>，然后我们再生成一个密钥，即<code>client Secret</code>，接着在配置文件中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    comments:
+</span></span><span class="line"><span class="cl">        enabled: true
+</span></span><span class="line"><span class="cl">        provider: gitalk
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        gitalk:
+</span></span><span class="line"><span class="cl">            owner: &lt;your-github-name&gt;
+</span></span><span class="line"><span class="cl">            admin: &lt;your-github-name&gt;
+</span></span><span class="line"><span class="cl">            repo: &lt;仓库名，即那个github.io&gt;
+</span></span><span class="line"><span class="cl">            clientID: xxx
+</span></span><span class="line"><span class="cl">            clientSecret: xxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后第一次进入后会让你登录，直接Github授权就完事了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/hugo-stack-build-02/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post/003.png" loading="lazy" data-key="hugo-stack-build-02" data-hash="/post/003.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">建站经验[二]stack主题基本美化操作</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/hugo-stack-build-01/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/post/002.png" loading="lazy" data-key="hugo-stack-build-01" data-hash="/post/002.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">建站经验[一]利用github加hugo搭建属于自己的博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <link href='https://unpkg.com/@waline/client@v3/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji","https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo"],"lang":"zh-CN","locale":{"admin":"站长","placeholder":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://wilinetest-qw2k7t4q4-zhuyh1139s-projects.vercel.app/","visitor":true});
+</script>
+
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -283,6 +644,84 @@
     </section>
 </footer>
 
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
             </main>
         </div>
