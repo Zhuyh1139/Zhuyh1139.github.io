@@ -392,8 +392,13 @@
      
     
         
-    <link href='https://unpkg.com/@waline/client@v3/dist/waline.css' rel='stylesheet'/>
+    <link
+rel="stylesheet"
+href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+/>
+
 <div id="waline" class="waline-container"></div>
+
 <style>
     .waline-container {
         background-color: var(--card-background);
@@ -403,12 +408,13 @@
         --waline-font-size: var(--article-font-size);
     }
     .waline-container .wl-count {
-        color: var(--card-text-color-main);
+       color: var(--card-text-color-main);
     }
-</style><script>
-    
-    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji","https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo"],"lang":"zh-CN","locale":{"admin":"站长","placeholder":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://wilinetest-qw2k7t4q4-zhuyh1139s-projects.vercel.app/","visitor":true});
-</script>
+</style><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili","https://npm.elemecdn.com/@waline/emojis@1.1.0/bmoji","https://npm.elemecdn.com/@waline/emojis@1.1.0/weibo"],"lang":"zh-CN","locale":{"admin":"站长","placeholder":"还没有人评论哦！快来抢沙发吧~"},"placeholder":"欢迎留下宝贵的评论！","requiredMeta":["name","email","url"],"serverURL":"https://wilinetest-qw2k7t4q4-zhuyh1139s-projects.vercel.app/","visitor":true});
+  </script>
 
     
 
